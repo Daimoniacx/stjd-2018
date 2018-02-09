@@ -1,0 +1,8 @@
+ALTERED QUALIA (Experimentos com WebGL)
+http://alteredqualia.com/
+
+SHADERTOY (Experimentos com Shaders de Fragmento)
+https://www.shadertoy.com/
+
+THREE JS (Biblioteca JS para 3D)
+https://threejs.org/
