@@ -1,15 +1,31 @@
-document.body.style.background = "hsl(0,100%,50%)";
+let S = 100;
+let L = 50;
+let isLuz = true;
 
-//window.addEventListener("mousemove", mudarCor);
+window.addEventListener("click", toggleLuz);
 
-function mudarCor(girafaBebada){
-  let h = window.innerHeight;
+function toggleLuz(){
+  isLuz = !isLuz;
+}
+
+window.addEventListener("mousemove", mudarCor);
+
+function mudarCor(evt){
+  let x = evt.x;
+  let y = evt.y;
   let w = window.innerWidth;
-  let x = girafaBebada.x;
-  let y = girafaBebada.y;
-  let msg = `X: ${x}, Y: ${y}, W: ${w}, H: ${h}`;
+  let h = window.innerHeight;
 
-  let blue = ~~((1-(y/h))*255);
-  let red = ~~((x/w)*255);
-  document.body.style.background = `rgb(${red},0,${blue})`;
+  let vertical = ~~((1-(y/h))*100);
+  let hue = ~~((x/w)*360);
+
+  if(isLuz){
+    L = vertical;
+  } else {
+    S = vertical;
+  }
+
+  let cor = `hsl(${hue}, ${S}%, ${L}%)`
+  document.body.style.background = cor;
+  console.log(cor);
 }
