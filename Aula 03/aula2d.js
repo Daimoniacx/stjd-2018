@@ -86,6 +86,6 @@ function main() {
 
 function animate(){
 	gl.clear( gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT );
-	gl.drawArrays(gl.POINTS, 0, data.points.length/2);
+	gl.drawArrays(gl.TRIANGLES, 0, data.points.length/2);
 	window.requestAnimationFrame(animate);
 }
