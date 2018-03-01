@@ -1,6 +1,9 @@
+precision highp float;
+
 attribute vec2 position;
+varying vec2 cor;
 
 void main() {
-	gl_PointSize = 35.0;
-	gl_Position = vec4(position.x + 1.0, position.y , 1.0, 1.0);
+	cor = position;
+	gl_Position = vec4(position.xy , 1.0, 1.0);
 }

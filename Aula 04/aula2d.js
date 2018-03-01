@@ -51,9 +51,12 @@ function linkProgram(vertexShader,fragmentShader){
 
 function getData(){
 	var points = [
-					-0.9, -0.9,
-					0.9, -0.9,
-					-0.0,  0.9
+					0,0,
+					0,1,
+					1,1,
+					0,0,
+					1,0,
+					1,1
 				];
 	return {"points": new Float32Array(points)};
 }
