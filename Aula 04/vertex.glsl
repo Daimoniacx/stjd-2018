@@ -1,7 +1,7 @@
 precision highp float;
 
 attribute vec2 position;
-varying vec2 cor;
+varying vec2 positionPixel;
 
 void main() {
 	cor = position;
