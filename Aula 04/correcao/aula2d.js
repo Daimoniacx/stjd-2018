@@ -109,5 +109,5 @@ function mover(evt){
   let h = window.innerHeight;
 
 	px = ((x/w)*2)-1;
-	py = ((y/h)*2)-1;
+	py = (((y/h)*2)-1)*-1;
 }
