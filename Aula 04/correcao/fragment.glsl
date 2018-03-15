@@ -11,5 +11,5 @@ float d = 1.0 - (distance(luz, positionPixel) / r2);
 
 void main() {
 
-	gl_FragColor = vec4(d,d,d,1.0);
+	gl_FragColor = vec4(1.0,d,d,1.0);
 }
